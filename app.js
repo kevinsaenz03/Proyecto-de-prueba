@@ -14,9 +14,7 @@ if ("serviceWorker" in navigator) {
         try {
 
             const registration =
-                    await navigator.serviceWorker.register(
-                            "/service-worker.js"
-                            );
+                    await navigator.serviceWorker.register('./service-worker.js');
 
             console.log(
                     "Service Worker registrado",
